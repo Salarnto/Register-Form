@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to bottom right, #88d9fc, #3862aa);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: #e4f0f6;
+    box-shadow: 10px 10px 20px 3px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 600px;
+}
+
+.header{
+    color: #3a99d0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+}
+
+.inputs{
+    width: 80%;
+}
+
+.input-control{
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.input-control input{
+    background-color: transparent;
+    color: #000;
+    outline: none;
+    border: none;
+    border-bottom: 1.5px solid #8c98a0;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 8px 0;
+    width: 100%;
+}
+
+.input-control.success input{
+    border-bottom: 2px solid #2ecc71;
+}
+
+.input-control.error input{
+    border-bottom: 2px solid #e74c3c;
+}
+
+.input-control i{
+    visibility: hidden;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.input-control small{
+    visibility: hidden;
+    position: absolute;
+    font-size: 0.7rem;
+    bottom: 0;
+    left: 0;
+}
+
+.input-control.error small{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.input-control.success i.fa-check-circle{
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.input-control.error i.fa-exclamation-circle{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.input-control input::placeholder{
+    color: #8c98a0;
+}
+
+.input-control input:focus{
+    border-bottom: 2px solid #3a99d0;
+}
+
+.checkbox-control{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-control input{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox-control i{
+    display: none;
+}
+
+.checkbox-control.error i{
+    display: initial;
+    color: #e74c3c;
+}
+
+.checkbox-control.success i{
+    display: none;
+}
+
+.checkbox-control h5{
+    color:#4e585f;
+    font-size: 0.7rem;
+    margin: 0 10px;
+}
+
+a{
+    color: #3a99d0;
+    text-decoration: none;
+}
+
+.sign-up-choices{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 80%;
+}
+
+.sign-up-choices .sign-up, .log-in{
+    cursor: pointer;
+    background-color: #3a99d0;
+    color: #e4f0f6;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 1rem 4rem;
+}
+
+.sign-up-choices .sign-up:hover, .log-in:hover{
+    background-color: #3862aa;
+}
+
+.sign-up-choices .log-in-suggestion, .sign-up-suggestion{
+    color: #8c98a0;
+    font-size: 0.7rem;
+}
+
+.footer{
+    background-color: #3a99d0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+}
+
+.footer h5{
+    color: #e4f0f6;
+}
+
+.footer .social-media{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+.footer button{
+    cursor: pointer;
+    background-color: transparent;
+    color: #e4f0f6;
+    border: none;
+    font-size: 1.3rem;
+}
+
+.log-in-choices-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.log-in-choices{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.another-way{
+    margin-left: 0.5rem;
+}
